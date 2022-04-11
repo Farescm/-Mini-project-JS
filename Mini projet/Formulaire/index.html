@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Formulaire</title>
+      <link rel="stylesheet" href="css/styles.css" />
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    </head>
+  <body>
+    <section class="leForm">
+      <form>
+        <h1>Formulaire</h1>
+        <div class="separation"></div>
+        <div class="corps-formulaire">  
+          <div class="gauche">
+            <div class="groupe">
+
+              <label id="pseudo-label" for="pseudo">Pseudo <span class="etoile">*</span></label>
+              <input type="text" autocomplete="off" id="pseudo" name="pseudo"/>
+              <i class="fas fa-user"></i>
+              <p id="errorPseudo"> </p>
+
+            </div>
+            <div class="groupe">
+              <label id="age-label" for="age">Age </label>
+              <input type="text" autocomplete="off" id="age" name="age" />
+              <i class="fas fa-baby"></i>
+              <p id="errorAge"></p>
+            </div>
+            
+          </div>
+  
+          <div class="droite">
+            <div class="groupe">
+
+                <label id="password-label" for="password" >Mot de passe <span class="etoile">*</span></label>
+                <input type="password" autocomplete="off" id="password" name="password"/>
+                <i class="fas fa-key"></i>
+                <p id="errorPassword"></p>
+
+              </div>
+              <div class="groupe">
+                <label id="passwordcheck-label" for="passwordConfirm"> Confirmer le Mot de passe <span class="etoile">*</span></label>
+                <input type="password" id="passwordConfirm" name="password-check" autocomplete="off" />
+                <i class="fas fa-key"></i>
+                <p id="errorPasswordCheck"> </p>
+              </div>
+          </div>
+        </div>
+  
+        <div class="pied-formulaire" align="center">
+          <button type="button" id="envoie" onclick="lancement();">Envoyer</button>
+        </div>
+
+        <p><span class="etoile">*</span> Champ obligatoire</p>
+      </form>
+    </section>
+
+    <section class="tableau">
+      <table class="table-style values" id="values">
+        <thead>                      
+          <tr>
+          <th>ID</th>
+          <th>Date & Heure</th>
+          <th>Pseudo</th>
+          <th>Age</th>
+          <th>Password Hash</th>
+          </tr> 
+        </thead>   
+        <tbody>                 
+        </tbody>                        
+       </table>
+  </section>
+  </body> <script src="JavaScript/Scripts.js"></script>
+  </html>
+  

@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin-bottom: 0;
+}
+
+
+header{
+    /* background-color: yellow; */
+    height: 18vh;
+    display: flex;
+}
+
+
+
+.intro{
+    border: 2px solid black;
+    width: 85%;
+    text-align: center;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color: white;
+    font-size: 15px;
+    height: auto;
+    
+}
+
+.photo{
+    height: 190;
+    width: 250;
+    border: 2px solid black;
+}
+
+.photo img{
+    height: 100%;
+    width: 100%;
+}
+
+.separation{
+    margin-top: 1%;
+    width: 100%;
+    height: 3px;
+    background-color: #747cdf;
+}
+
+.mid{
+    display: flex;
+}
+
+
+
+.trois{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+.trois h2{
+    font-size: 30px;
+    line-height: 21px;
+    font-family: 'Lobster';
+    font-weight: 400;
+    color : red;
+}
+
+.trois a{
+    text-decoration: none;
+}
+
+
+.diplomes{
+    margin-top: 15px;
+    height: auto;
+}
+
+.labelfo{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.ville{
+    font-size: 110%;
+}
+
+.exp{
+
+    color: #f04e98;
+    font-size: 120%;
+}
+
+
+
+.ExPro{
+    margin-top: 15px;
+    height: auto;
+}
+
+.informatique{
+    margin-top: 15px;
+    height: auto;
+    align-content: space-between;
+}
+
+.informatique progress{
+    width: 60%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+
+.informatique li{
+    
+    display: flex;
+    align-content: space-between;
+    font-size: 120%;
+}
+
+.droite{
+    /* height: auto; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.banded{
+    margin: 20px;
+    height: 800px;
+    width: 500px;
+    bottom: 0px;
+    align-items: center;
+    background-color: #333333;
+
+} 
+
+.banded li{
+    font-family: 'Lato';
+    font-weight: 500;
+    line-height: 17px;
+    font-size: 20px;
+    color: white;
+    list-style: none;
+    padding: 8px;
+
+} 
+
+
+.information{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    align-content: space-between;
+
+}
+
+
+.banded h2{
+    font-family: 'Lobster';
+    font-size: 30px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-left: 25px;
+    color: red;
+}
+
+progress {
+    -webkit-appearance: none;
+    height: 10px;
+}
+
+::-webkit-progress-value {
+    background-color: #f04e98;
+    border-radius: 1rem;
+}
+
+::-webkit-progress-bar {
+    background-color: #333f48;
+    border-radius: 1rem;
+}

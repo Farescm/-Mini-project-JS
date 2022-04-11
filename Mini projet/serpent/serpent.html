@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<title>serpent</title>
+<head>
+<link rel="stylesheet" href="res/k_serpent_cvs.css"type="text/css" />
+<script type="text/javascript" src="res/k_serpent_cvs.js"></script>
+</head>
+<body>
+<div class='maitre'>
+
+<canvas id='dvg_jeux' height='400' width='600'>
+  
+</canvas>
+
+<div id='dg_point'>
+	 <span id='point'>0</span>
+</div>
+  
+  <div id='menu'>
+ <div >Appuyer sur Espace</div>
+   </div>
+
+   <script type="text/javascript">
+    document.onkeypress=function(e){e=e||window.event;
+        var key=e.which?e.which:event.keyCode;
+        if (key==32) init_serpent();}
+    </script>
+
+ </div>
+ 
+
+
+</body>
+</html>
